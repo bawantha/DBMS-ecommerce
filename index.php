@@ -39,22 +39,22 @@
                             <img src="images/electronic.jpg" class="img-responsive">
                         </a>
                         <div class="text" align=center>
-                            <h3><a href="catalog/electronics.php">Electronic</a></h3>
+                            <h3><a href="electronics.php">Electronics</a></h3>
                             <p class="buttons">
-                                <a href="catalog/electronics.php" class="btn btn-primary"><i class="fa fa-shopping-cart">View Catalog</i></a>
+                                <a href="electronics.php" class="btn btn-primary"><i class="fa fa-shopping-cart">View Catalog</i></a>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md4 col-md-6 center-responsive">
                     <div class="product">
-                        <a href="catalog/toys.php">
+                        <a href="toys.php">
                             <img src="images/toy.jpg" class="img-responsive">
                         </a>
                         <div class="text" align=center>
-                            <h3><a href="catalog/toys.php">Toys</a></h3>
+                            <h3><a href="toys.php">Toys</a></h3>
                             <p class="buttons">
-                                <a href="catalog/toys.php" class="btn btn-primary"><i class="fa fa-shopping-cart">View Catalog</i></a>
+                                <a href="toys.php" class="btn btn-primary"><i class="fa fa-shopping-cart">View Catalog</i></a>
                             </p>
                         </div>
                     </div>
