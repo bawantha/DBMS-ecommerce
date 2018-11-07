@@ -14,10 +14,10 @@
 				<li>
                     <a href="customer_register.php">Register</a>
                 </li>
-                <li><a href="checkout.php">My Account</a>
+                <li><a href="login.php">My Account</a>
                 </li>
                 <li><a href="cart.php">Go to Cart</a></li>
-                <li><a href="checkout.php">Login</a></li>
+                <li><a href="login.php">Login</a></li>
 
             </ul>
         </div>

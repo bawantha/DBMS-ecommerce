@@ -23,9 +23,9 @@
 <!--        WELCOME STRIP-->
 			<div class="row">
 				<div class="box">
-					<h1>Register New Customer</h1>
+					<h1>Customer Login</h1>
 					<p>
-                    <a href="login.php" class="btn btn-success btn-sm">Click here to LOGIN.</a>
+                    <a href="customer_register.php" class="btn btn-success btn-sm">Click here to REGISTER.</a>
 					</p>
 				</div>
 			</div>
@@ -36,30 +36,16 @@
 			<div class="box">
              <form action="/action_page.php" style="border:1px solid #ccc"> <!--add POST Action -->
 			  <div class="container">
+				
 				<br>
 				<label for="email"><b>Email</b></label><br>
 				<input type="email" placeholder="Enter Email" name="email" required><br>
-				
-				<label for="name"><b>Name</b></label><br>
-				<input type="text" placeholder="Enter Name" name="name" required><br>
-				
-				<label for="address"><b>Address</b></label><br>
-				<input type="text" placeholder="Enter Address" name="address" required><br>
-				
-				<label for="telephone"><b>Contact Number</b></label><br>
-				<input type="telephone" placeholder="Enter Contact Number" name="telephone" required><br>
 
 				<label for="psw"><b>Password</b></label><br>
 				<input type="password" placeholder="Enter Password" name="psw" required><br>
-
-				<label for="psw-repeat"><b>Repeat Password</b></label><br>
-				<input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
 				
-				
-				<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
 				<div class="clearfix">
-				  <button type="submit" class="signupbtn">Sign Up</button>
+				  <button type="submit" class="signupbtn">Login</button>
 				</div>
 			  </div>
 			</form>  
