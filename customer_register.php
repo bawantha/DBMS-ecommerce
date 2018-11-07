@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include('controllers/register.controller.php'); ?>
 <head>
-    <title></title>
+    <title>Register</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100" >
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -34,7 +35,7 @@
 
             <div class="row">
 			<div class="box">
-             <form action="/action_page.php" style="border:1px solid #ccc"> <!--add POST Action -->
+             <form style="border:1px solid #ccc" method='POST'> <!--add POST Action -->
 			  <div class="container">
 				<br>
 				<label for="email"><b>Email</b></label><br>
@@ -49,8 +50,8 @@
 				<label for="telephone"><b>Contact Number</b></label><br>
 				<input type="telephone" placeholder="Enter Contact Number" name="telephone" required><br>
 
-				<label for="psw"><b>Password</b></label><br>
-				<input type="password" placeholder="Enter Password" name="psw" required><br>
+				<label for="password"><b>Password</b></label><br>
+				<input type="password" placeholder="Enter Password" name="password" required><br>
 
 				<label for="psw-repeat"><b>Repeat Password</b></label><br>
 				<input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
@@ -59,7 +60,7 @@
 				<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
 				<div class="clearfix">
-				  <button type="submit" class="signupbtn">Sign Up</button>
+				  <button type="submit" class="signupbtn" name="register">Sign Up</button>
 				</div>
 			  </div>
 			</form>  
