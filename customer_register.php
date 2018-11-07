@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title></title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100" >
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -41,11 +42,8 @@
 				<label for="email"><b>Email</b></label><br>
 				<input type="email" placeholder="Enter Email" name="email" required><br>
 				
-				<label for="fname"><b>First Name</b></label><br>
-				<input type="text" placeholder="Enter First Name" name="fname" required><br>
-				
-				<label for="lname"><b>Last Name</b></label><br>
-				<input type="text" placeholder="Enter Last Name" name="lname" required><br>
+				<label for="name"><b>Name</b></label><br>
+				<input type="text" placeholder="Enter Name" name="name" required><br>
 				
 				<label for="address"><b>Address</b></label><br>
 				<input type="text" placeholder="Enter Address" name="address" required><br>
