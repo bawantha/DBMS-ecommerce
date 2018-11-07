@@ -7,8 +7,8 @@
 			
         <ul class="nav nav-pills nav-stacked category-menu" align=center>
 			  <li><img src=http://pluspng.com/img-png/shopping-png-online-shopping-free-download-png-png-image-200.png></li>
-            <li><a href="shop.php">Electronic</a></li>
-            <li><a href="shop.php">Toys</a></li>
+            <li><a href="electronics.php">Electronic</a></li>
+            <li><a href="toys.php">Toys</a></li>
         </ul>
     </div>
 </div></div>
