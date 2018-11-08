@@ -31,10 +31,7 @@
             <!-- ITEMS-->
             <div class="row">
 			<div class="box">
-			    <li>Item 1</li>
-				 <li>Item 2</li>
-				 <li>Item 3</li>
-				 <li>Item 4</li>
+			    <?php include "controllers/toys.controller.php" ?>
 			</div>
             </div>
         </div>
