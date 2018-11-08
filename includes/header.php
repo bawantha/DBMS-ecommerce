@@ -2,7 +2,7 @@
     <div class="container">
         <div class="col-md-6 offer">
             <a href="#" class="btn btn-success btn-sm">
-                Wellcome : Guest
+                Welcome : Guest
             </a>
 
         </div>
