@@ -7,7 +7,7 @@
 	$password="";
 	$psw_repeat="";
 	
-	$db = mysqli_connect('localhost', 'root', '', 'c_online');
+	include('database.controller.php');
 
 	if (isset($_POST['register'])) {
 
