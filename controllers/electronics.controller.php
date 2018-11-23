@@ -1,7 +1,7 @@
 <?php
-$conn=mysqli_connect('localhost','root','','c_online');
+include('database.controller.php');
 $sql="SELECT * FROM subcategory s JOIN category c ON s.cat_id=c.cat_id WHERE c.cat_name='electronics';";
-$result=mysqli_query($conn,$sql);
+$result=mysqli_query($db,$sql);
 while($row = mysqli_fetch_assoc($result)){
 	$subcat_array[]=$row;
  }
