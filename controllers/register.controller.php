@@ -25,10 +25,10 @@
 			$var=mysqli_query($db, $query);
 			session_start();
 			if($var){
-				$_SESSION['error']="You have successfully submitted your application";
+				$_SESSION['error']="You have successfully registered";
 				header("location: status.php?pop=yes");	
 			}else{
-				$_SESSION['error']="There was an error in submitting your application. Please use an unique email for registration";
+				$_SESSION['error']="There was an error in your registration. Please use an unique email for registration";
 				header("location: status.php?pop=yes");	
 			}
 		}else{
