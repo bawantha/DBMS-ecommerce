@@ -13,6 +13,7 @@
 
 <!--HEADLINE    -->
 <?php include "includes/header.php" ?>
+<?php include "controllers/login.controller.php" ?>
 
 <!--SIDE BAR FOR CATEGORIES-->
 <div id="content">
@@ -34,15 +35,15 @@
 
             <div class="row">
 			<div class="box">
-             <form action="/action_page.php" style="border:1px solid #ccc"> <!--add POST Action -->
+             <form style="border:1px solid #ccc" method='POST' > <!--add POST Action -->
 			  <div class="container">
 				
 				<br>
 				<label for="email"><b>Email</b></label><br>
 				<input type="email" placeholder="Enter Email" name="email" required><br>
 
-				<label for="psw"><b>Password</b></label><br>
-				<input type="password" placeholder="Enter Password" name="psw" required><br>
+				<label for="password"><b>Password</b></label><br>
+				<input type="password" placeholder="Enter Password" name="password" required><br>
 				
 				<div class="clearfix">
 				  <button type="submit" class="signupbtn">Login</button>
