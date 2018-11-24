@@ -7,6 +7,7 @@ while($row = mysqli_fetch_assoc($result)){
  }
 foreach($subcat_array as $subcat){
 	$subcat_name=$subcat['subcat_name'];
-	echo "<li><a href=\"#\">$subcat_name</a></li>";
+	$subcat_id=$subcat['subcat_id'];
+	echo "<li><a href=\"products.php?subcat=$subcat_id\">$subcat_name</a></li>";
 }
 ?>
