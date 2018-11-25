@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>C Online</title>
+    <title>Cart</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100" >
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -21,18 +21,17 @@
 <!--        WELCOME STRIP-->
 			<div class="row">
 				<div class="box">
-					<h1><?php echo $_GET['name'] ?></h1>
-					<h4>
-							Product Details
-					</h4>
-                    <p><?php echo $_GET['details'] ?></p>
+					<h1>Cart</h1>
+					<p>
+                        <?php echo $_POST['quantity'];?>
+					</p>
 				</div>
 			</div>
 
             <!-- ITEMS-->
             <div class="row">
 			<div class="box">
-               <?php include "controllers/view.controller.php" ?>
+               <?php include "controllers/cart.controller.php" ?>
 			</div>
             </div>
         </div>
