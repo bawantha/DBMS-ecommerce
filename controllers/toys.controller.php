@@ -7,7 +7,6 @@
 	 }
 	foreach($subcat_array as $subcat){
 		$subcat_name=$subcat['subcat_name'];
-		$subcat_id=$subcat['subcat_id'];
 		echo "<li><a href=\"products.php?subcat=$subcat_id\">$subcat_name</a></li>";
 	}
 ?>
