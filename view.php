@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Electronics</title>
+    <title><?php echo $_GET['name'] ?></title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100" >
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -32,7 +32,6 @@
             <div class="row">
 			<div class="box">
                <?php include "controllers/view.controller.php" ?>
-			</div>
             </div>
         </div>
     </div>
