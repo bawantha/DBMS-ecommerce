@@ -17,6 +17,5 @@
 	echo"</div><div class=\"box\">
 					<h1>
 							Rs. $price 
-					</h1>
-				</div>";
+					</h1>";
 ?>
