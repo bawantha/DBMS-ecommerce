@@ -35,7 +35,7 @@
             <div class="row">
                 <div class="col-md4 col-md-6 center-responsive">
                     <div class="product">
-                        <a href="catalog/electronics.php">
+                        <a href="electronics.php">
                             <img src="images/electronic.jpg" class="img-responsive">
                         </a>
                         <div class="text" align=center>
