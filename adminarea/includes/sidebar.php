@@ -220,31 +220,7 @@ else {
                 </li><!-- li Ends -->
 
 
-                <li><!-- li Starts -->
 
-                    <a href="#" data-toggle="collapse" data-target="#slides">
-
-                        <i class="fa fa-fw fa-gear"></i> Slides
-
-                        <i class="fa fa-fw fa-caret-down"></i>
-
-
-                    </a>
-
-                    <ul id="slides" class="collapse">
-
-                        <li>
-                            <a href="index.php?insert_slide"> Insert Slide </a>
-                        </li>
-
-                        <li>
-                            <a href="index.php?view_slides"> View Slides </a>
-                        </li>
-
-
-                    </ul>
-
-                </li><!-- li Ends -->
 
                 <li>
 
