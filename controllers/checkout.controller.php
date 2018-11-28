@@ -17,7 +17,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 $calculated_price = $row['price'];
     
 if( isset($_POST['delivery']) && isset($_POST['checkout'])  ){
-    $delivery_location = $_POST['delivery'];
+    $delivery_location = mysqli_real_escape_string($db,$_POST['delivery']);
 
     begin();
     $query1 = "INSERT INTO order_c (session_id, order_type, delivery_location, calculated_price)
