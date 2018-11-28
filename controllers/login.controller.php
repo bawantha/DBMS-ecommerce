@@ -10,7 +10,7 @@
       // email and password sent from form
 
       $email = mysqli_real_escape_string($db,$_POST['email']);
-      $password = md5(mysqli_real_escape_string($db,$_POST['password']));
+      $password = mysqli_real_escape_string($db,$_POST['password']);
 
       $sql = "SELECT customer_id FROM customer_registered WHERE email = '$email' AND password = '$password' ";
       $result = mysqli_query($db,$sql);

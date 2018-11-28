@@ -42,7 +42,7 @@
 							<input type="number" value="1" min="1" style="width:100px" name="quantity" required><br>
 							
 							<div class="clearfix">
-							  <button type="submit" class="signupbtn" style="width:200px">Add to Cart</button>
+							  <button type="submit" class="signupbtn" style="width:200px" >Add to Cart</button>
 							</div>
 						  </div>
 						</form>

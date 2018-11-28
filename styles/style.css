@@ -461,5 +461,63 @@ hr.dotted {
     margin-right:5px;
 }
 
+#content #cart .table tbody tr td img {
+    width: 50px;
+}
 
+#content #cart .table tbody tr td input {
+    width: 40px;
+    text-align: right;
+
+}
+
+#content #cart .table tbody tr td{
+    vertical-align: middle;
+
+}
+#content #cart .table tfoot {
+    font-size:18px;
+}
+
+.box .box-footer {
+    background: #f7f7f7;
+    margin: 30px -20px -20px;
+    padding:20px;
+    border-top: solid 1px #eeeeee;
+
+}
+
+.box .box-footer:before,
+.box .box-footer:after {
+    content:" ";
+    display: table;
+}
+
+.box .box-footer:after {
+    clear:both;
+}
+
+.box .box-header {
+    background:#f7f7f7;
+    margin:-20px -20px 20px;
+    padding:20px;
+    border-bottom: solid 1px #eeeeee;
+
+}
+
+#content #order-summary table {
+    margin-top: 20px;
+
+}
+#content #order-summary table td {
+    color: #999999;
+}
+
+#content #order-summary table tr.total td,
+#content #order-summary table tr.total th{
+    font-size: 18px;
+    color:#555555;
+    font-weight: 700;
+
+}
 
