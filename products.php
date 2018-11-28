@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>C Online</title>
+    <title>Products</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100" >
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -27,7 +27,7 @@
 					</p>
 				</div>
 			</div>
-
+f
             <!-- ITEMS-->
             <div class="row">
 			<div class="box">
