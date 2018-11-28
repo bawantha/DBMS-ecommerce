@@ -102,7 +102,7 @@ if(!isset($_SESSION['session_id'])){
 
                             $only_price = $row_products['base_price'];
 
-                            $sub_total = $row_products['base_price']*$quantity;
+                            $sub_total = $row_products['calculated_price']*$quantity;
 
                             $total += $sub_total;
 

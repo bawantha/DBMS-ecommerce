@@ -1,7 +1,7 @@
 <?php
 include('database.controller.php');
 $subcat_id=$_GET['subcat'];
-$sql="SELECT * FROM sku_full WHERE subcat_id='$subcat_id' GROUP BY sku_id;";
+$sql="SELECT product_name,calculated_price,sku_id FROM sku_full WHERE subcat_id='$subcat_id' GROUP BY sku_id;";
 $result=mysqli_query($db,$sql);
 while($row = mysqli_fetch_assoc($result)){
 	$sku_array[]=$row;
