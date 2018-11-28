@@ -1,11 +1,16 @@
 <?php
 session_start();
 include('controllers/database.controller.php');
+if(!isset($_SESSION['session_id']) && isset($_SESSION['order_id']) ){
+    header("Location: payments.php");
+	die();
+}
 if(!isset($_SESSION['session_id'])){
 		 $create_cart_query=mysqli_query($db,"INSERT INTO cart (price) VALUES ('0');");
 		 $cart_id=mysqli_insert_id($db);
 		 $_SESSION['session_id']=$cart_id;
-	}
+    }
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +25,7 @@ if(!isset($_SESSION['session_id'])){
 
     <link href="styles/style.css" rel="stylesheet">
 
-    <<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
 </head>
