@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Electronics</title>
+    <title><?php echo $_GET['name'] ?></title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100" >
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -13,6 +13,7 @@
 
 <!--HEADLINE    -->
 <?php include "includes/header.php" ?>
+
 
 <div id="content">
     <div class="container">
@@ -30,9 +31,22 @@
 
             <!-- ITEMS-->
             <div class="row">
-			<div class="box">
-               <?php include "controllers/view.controller.php" ?>
-			</div>
+					<div class="box">
+						<?php include "controllers/view.controller.php" ?> 
+						<?php include "controllers/addtocart.controller.php" ?> 
+					
+						<form style="border:1px solid #ccc" method='POST' > <!--add POST Action -->
+						  <div class="container">
+							<br>
+							<label for="quantity"><b>Quantity</b></label><br>
+							<input type="number" value="1" min="1" style="width:100px" name="quantity" required><br>
+							
+							<div class="clearfix">
+							  <button type="submit" class="signupbtn" style="width:200px" >Add to Cart</button>
+							</div>
+						  </div>
+						</form>
+					</div>
             </div>
         </div>
     </div>
