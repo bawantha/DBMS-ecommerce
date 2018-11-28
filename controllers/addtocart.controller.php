@@ -13,6 +13,6 @@
 	  $session_id=$_SESSION['session_id'];
       $sql = "INSERT INTO cart_details (session_id, sku_id, quantity) VALUES ('$session_id','$sku_id','$quantity')";
       $result = mysqli_query($db,$sql);
-
+	  header('location:cart.php');
    }
 ?>

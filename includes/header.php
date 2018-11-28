@@ -1,8 +1,8 @@
 <div id="top">
     <div class="container">
         <div class="col-md-6 offer">
-            <a href="#" class="btn btn-success btn-sm">
-                Welcome
+            <a href="index.php" class="btn btn-success btn-sm">
+                C Online
             </a>
 
         </div>

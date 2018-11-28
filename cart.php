@@ -1,11 +1,17 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost","root","","c_online");
+include('controllers/database.controller.php');
+if(!isset($_SESSION['session_id'])){
+		 $create_cart_query=mysqli_query($db,"INSERT INTO cart (price) VALUES ('0');");
+		 $cart_id=mysqli_insert_id($db);
+		 $_SESSION['session_id']=$cart_id;
+	}
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>C Online </title>
 
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100" rel="stylesheet" >
@@ -18,10 +24,13 @@ $con = mysqli_connect("localhost","root","","c_online");
 
 
 </head>
-
+<!--HEADLINE    -->
+<?php include "includes/header.php" ?>
 <body>
 
-
+<div class="container">
+        <?php include "includes/sidebar.php" ?>
+        <div class="col-md-9">
 <div class="col-md-9" id="cart" ><!-- col-md-9 Starts -->
 
     <div class="box" ><!-- box Starts -->
@@ -34,15 +43,10 @@ $con = mysqli_connect("localhost","root","","c_online");
             if(isset($_SESSION['session_id'])){
                 $_session_id=$_SESSION['session_id'];
                 $select_cart ="SELECT * FROM `cart_details` WHERE `session_id`='$_session_id'";
-                $run_cart = mysqli_query($con,$select_cart);
+                $run_cart = mysqli_query($db,$select_cart);
                 $count = mysqli_num_rows($run_cart);
 
             }
-
-            echo $count;
-
-
-
             ?>
 
             <p class="text-muted" > You currently have <?php echo $count; ?> item(s) in your cart. </p>
@@ -84,7 +88,7 @@ $con = mysqli_connect("localhost","root","","c_online");
 
                         $get_products = "SELECT  * FROM  product NATURAL  JOIN sku where sku_id='$sku_id'";
 
-                        $run_products = mysqli_query($con,$get_products);
+                        $run_products = mysqli_query($db,$get_products);
 
                         while($row_products = mysqli_fetch_array($run_products)){
 
@@ -189,7 +193,7 @@ $con = mysqli_connect("localhost","root","","c_online");
 
     function update_cart(){
 
-        global $con;
+        global $db;
 
         if(isset($_POST['update'])){
 
@@ -198,7 +202,7 @@ $con = mysqli_connect("localhost","root","","c_online");
 
                 $delete_product = "delete from cart_details where sku_id='$remove_id'";
 
-                $run_delete = mysqli_query($con,$delete_product);
+                $run_delete = mysqli_query($db,$delete_product);
 
                 if($run_delete){
                     echo "<script>window.open('cart.php','_self')</script>";
@@ -227,4 +231,4 @@ $con = mysqli_connect("localhost","root","","c_online");
 
 
 
-</div><!-- col-md-9 Ends -->
+</div></div><!-- col-md-9 Ends -->
