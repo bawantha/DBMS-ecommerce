@@ -1,8 +1,25 @@
+<style>
+.button {
+    background-color: #4CAF50; 
+}
+.button2{
+    background-color: #8a00e6;
+    color: white;
+}
+.button3{
+    background-color: #4c0080;
+    color: white;
+    height: 50px;
+    width: 100px;
+}
+</style>
 <div id="top">
     <div class="container">
         <div class="col-md-6 offer">
-            <a href="index.php" class="btn btn-success btn-sm">
-                C Online
+
+            <a href="#" class="btn button">
+                Welcome
+
             </a>
 
         </div>

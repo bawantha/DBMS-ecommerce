@@ -6,18 +6,15 @@
 	while($row = mysqli_fetch_assoc($result)){
 		$detail_array[]=$row;
 	 }
-	 $description =$detail_array[0]['description'];
-	 echo "<li>$description</li>";
+
 	foreach($detail_array as $detail){
+		var_dump($detail);
+
+		$price=$detail["base_price"];
+		$product_name=$detail["product_name"];
+		$product_description=$detail["description"];
 		$detail_value=$detail['variant_type']." : ".$detail['variant_value'];
-		echo "<li>$detail_value</li>";
-	}
-	$sql2="SELECT calculated_price FROM sku WHERE sku_id='$sku_id'";
-	$result2=mysqli_query($db,$sql2);
-	$row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
-	$price=$row2['calculated_price'];
-	echo"</div><div class=\"box\">
-					<h1>
-							Rs. $price 
-					</h1>";
-?>
+
+		echo "<li><a href=\"add_cart_buy_now.php?price=$price&name=$product_name&details=$product_description&value=$detail_value&sku=$sku_id\">$detail_value</li>";
+}?>
+
