@@ -1,20 +1,20 @@
 <?php
 $db_server='localhost';
-$db_user='root';
-$db_password='';
+$db_user='shop_user';
+$db_password='shoppassword';
 $db_name='c_online';
 $db=mysqli_connect($db_server,$db_user,$db_password,$db_name);
 
 function begin(){
-    mysql_query("BEGIN");
+    mysqli_query($GLOBALS['db'],  "BEGIN");
 }
 
 function commit(){
-    mysql_query("COMMIT");
+    mysqli_query($GLOBALS['db'], "COMMIT");
 }
 
 function rollback(){
-    mysql_query("ROLLBACK");
+    mysqli_query($GLOBALS['db'], "ROLLBACK");
 }
 
 ?>
